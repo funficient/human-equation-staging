@@ -1271,19 +1271,14 @@ button {
 }
 
 /* Footer Bottom */
-.footer-divider {
-  height: 1px;
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #fff;
-}
+
 
 .footer-bottom {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px 39px;
+  padding: 30px 0 39px;
 }
 
 .copyright,
