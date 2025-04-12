@@ -1172,6 +1172,156 @@ button {
   }
 }
 
+/* footer */
+
+.footer {
+  padding: 92px 20px 0;
+  background-color: #0f4761;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 30px;
+}
+
+
+
+.footer-section-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18.2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* Contact Section */
+.footer-contact-section {
+  flex: 1;
+}
+
+.contact-info {
+  margin-bottom: 69px;
+  font-style: normal;
+}
+
+.contact-item {
+  color: #fff;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+.contact-item p {
+  font-size: 14px;
+}
+
+.contact-label {
+  font-weight: 700;
+}
+
+.physical-address {
+  color: #fff;
+  font-size: 14px;
+  line-height: 19.6px;
+  font-style: normal;
+}
+
+/* Navigation Section */
+.footer-navigation-section {
+  flex: 1;
+}
+
+.footer-nav + .footer-nav .footer-section-title {
+  margin-top: 47px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-link {
+  color: #fff;
+  font-size: 14px;
+  line-height: 19.6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  text-decoration: underline;
+}
+
+/* Courses Section */
+.footer-courses-section {
+  flex: 1;
+}
+
+.footer-courses-section .footer-nav + .footer-nav .footer-section-title {
+  margin-top: 48px;
+}
+
+/* Footer Bottom */
+.footer-divider {
+  height: 1px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 39px;
+}
+
+.copyright,
+.credits {
+  color: #fff;
+  font-size: 13px;
+  line-height: 19.5px;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .contact-section,
+  .footer-navigation-section,
+  .footer-courses-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 60px 20px 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
 /* Debugged to here */
 
 
