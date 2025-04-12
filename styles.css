@@ -70,12 +70,9 @@ input, button, textarea, select {
   font: inherit;
 }
 
-
-
 h1, h2, h3, h4, p {
   overflow-wrap: break-word;
 }
-
 
 li,
 a,
@@ -84,9 +81,6 @@ button {
   font-weight: 500;
   text-decoration: none;
 }
-
-
-/*------------------    End of reset      ------------*/
 
 .debug {
     border: 2px solid red;
@@ -147,7 +141,10 @@ button {
   position: relative;
   background-size: cover;
   background-position: center;
+  width: 100%;
+  max-height: 500px;
 }
+
 
 .hero-content {
   position: absolute;
@@ -159,6 +156,7 @@ button {
   padding: 31px 136px;
   background-color: var(--primary-color);
 }
+
 
 .hero-content::before {
   content: "";
@@ -185,6 +183,7 @@ button {
   display: flex;
   gap: 15px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .primary-button {
@@ -213,37 +212,9 @@ button {
 
 
 
-/* Hero section */
+/* Debugged to here */
 
 
-.hero-buttons {
-  display: flex;
-  margin-top: 28px;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-/* Button styles */
-.btn {
-  font-size: 20px;
-  font-weight: 600;
-  padding: 0 40px;
-  border-radius: 10px;
-  line-height: 74px;
-  cursor: pointer;
-  border: none;
-}
-
-.btn-primary {
-  background-color: #ffffff;
-  color: #0f4761;
-}
-
-.btn-secondary {
-  background-color: transparent;
-  border: 3px solid #ffffff;
-  color: #ffffff;
-}
 
 /* Stats section */
 .stats-section {
