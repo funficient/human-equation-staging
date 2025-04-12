@@ -381,7 +381,7 @@ button {
   border: 3px solid #0f4761;
   border-radius: 20px;
   margin: 20px auto;
-  max-width: 1436px;
+  max-width: 1200px;
   background-color: rgba(241, 241, 242, 0.3);
 }
 
@@ -423,6 +423,11 @@ button {
   font-weight: 400;
 }
 
+.spacer {
+  height: 20px;
+
+}
+
 
 .skills-grid {
   display: grid;
@@ -432,16 +437,8 @@ button {
 }
 
 .skill-item {
-  padding: 20px;
-}
-
-.skill-title {
-  color: #000;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 42px;
-  padding: 20px;
-  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #c7c7c7;
 }
 
 .skill-description {
@@ -478,9 +475,22 @@ button {
   margin: 0;
 }
 
-/* .divider {
-  grid-column: 1/-1;
-} */
+
+
+.service-subtitle {
+  color: #0f4761;
+  font-size: 20px;
+  line-height: 25px;
+  max-width: 415px;
+  margin-bottom: 20px;
+}
+
+.service-description {
+  color: #333;
+  max-width: 725px;
+  margin-left: 590px;
+  margin-top: -100px;
+}
 
 .divider svg {
   width: 95%;
@@ -539,7 +549,13 @@ button {
     width: 100%;
     text-align: center;
   }
+
+  .service-description {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
+
 
 @media (max-width: 640px) {
   .section-title {
@@ -577,6 +593,16 @@ button {
     line-height: 38px;
     text-align: center;
     padding: 20px;
+  }
+
+  .service-subtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .service-description {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
