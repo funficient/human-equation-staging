@@ -372,7 +372,7 @@ button {
 
 /* Courses */
 .courses-container {
-  max-width: 1728px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -935,8 +935,242 @@ button {
 }
 
 
+.brands-section {
+  background-color: rgba(244, 244, 244, 1);
+  display: flex;
+  padding: 58px 80px 115px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+.brands-container {
+  display: flex;
+  width: 1061px;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.brands-heading {
+  color: rgba(15, 71, 97, 1);
+  font-size: 42px;
+  font-weight: 600;
+  align-self: center;
+  
+}
+
+.brands-logo-grid {
+  display: flex;
+  margin-top: 42px;
+  align-items: stretch;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  object-fit: contain;
+  object-position: center;
+}
+
+.brand-logo-sasol {
+  aspect-ratio: 2.52;
+  width: 30%;
+}
+
+.brand-logo-volvo {
+  aspect-ratio: 1;
+  width: 111px;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-shrink: 0;
+  max-width: 100%;
+}
+
+.brand-logo-extra-wide {
+  aspect-ratio: 4.12;
+  width: 383px;
+  align-self: start;
+  
+}
+
+@media (max-width: 991px) {
+  .brands-section {
+    align-content: center;
+  } 
+
+  .brands-heading {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .brands-logo-grid {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .brand-logo-sasol {
+    
+    width: 100%;
+  }
+  .brand-logo-volvo {
+    align-items: center;
+    
+  }
+  
+}
 
 
+.courses-title {
+  color: #0f4761;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 74.4px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.course-card {
+  border-radius: 20px;
+  padding: 40px;
+  color: #fff;
+  position: relative;
+}
+
+.course-card-primary {
+  width: 700px;
+  background-color: #0f4761;
+}
+
+.course-card-secondary {
+  width: 700px;
+  background-color: #008080;
+}
+
+.course-card-tertiary {
+  grid-column: span 2;
+  width: 100%;
+  display: flex;
+  background-color: #009999;
+}
+
+.course-content {
+  max-width: 600px;
+}
+
+.course-heading {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.card-course-duration {
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 15px 0 0 15px;
+  padding: 15px 30px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: rgba(238, 238, 238, 0.3);
+}
+
+.card-course-description {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: white;
+}
+
+.course-image {
+  width: 700px;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 991px) {
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .course-card-primary,
+  .course-card-secondary {
+    width: 100%;
+    grid-column: span 2;
+    
+  }
+
+  .course-card-tertiary {
+    flex-direction: column;
+  }
+
+  .course-heading {
+    margin-top: 20px;
+  }
+
+  .course-content {
+    max-width: 100%;
+  }
+
+  .course-image {
+    position: static;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .courses-title {
+    font-size: 42px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 640px) {
+  .course-card {
+    padding: 20px;
+  }
+
+  .courses-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .course-heading {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .card-course-duration {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .card-course-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .course-image {
+    height: 200px;
+  }
+}
 
 /* Debugged to here */
 
