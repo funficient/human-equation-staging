@@ -675,6 +675,10 @@ button {
 }
 
 @media (max-width: 991px) {
+  .stats-section {
+    margin: auto;
+  }
+
   .stats-container {
     flex-wrap: wrap;
     padding: 20px;
