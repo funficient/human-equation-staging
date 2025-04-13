@@ -139,6 +139,9 @@ button {
   background-color: var(--primary-color);
 }
 
+.page-container {
+  justify-content: center;
+}
 
 /* Hero section */
 .hero-section {
@@ -177,11 +180,25 @@ button {
 
 .button-group {
   display: flex;
+  justify-items: center;
   gap: 15px;
   margin-top: 40px;
+  
+}
+
+.btn-group {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin: 20px 0;
+  gap: 15px;
+  
+  
 }
 
 .button {
+  box-sizing: border-box;
   font-weight: 600;
   padding: 20px 40px;
   border-radius: 10px;
@@ -242,7 +259,7 @@ button {
     text-align: center;
   }
 
-  .button-group {
+  .button-group, .btn-group {
     flex-direction: column;
     
   }
@@ -264,7 +281,7 @@ button {
     line-height: 35px;
   }
 
-  .button-group {
+  .button-group, .btn-group {
     gap: 10px;
   }
 
@@ -518,6 +535,7 @@ button {
 
 
 .btn {
+  box-sizing: border-box;
   font-weight: 600;
   line-height: 50px;
   padding: 0 40px;
@@ -736,7 +754,6 @@ button {
   font-weight: 500;
   color: #008080;
   line-height: 74.4px;
-  margin-bottom: 50px;
  
 }
 
@@ -749,7 +766,7 @@ button {
 .content-section {
   display: flex;
   gap: 74px;
-  padding: 110px 0;
+  padding: 50px 0;
 }
 
 .content-left {
@@ -761,6 +778,7 @@ button {
   font-size: 23px;
   line-height: 29.9px;
   color: #0f4761;
+  text-align: justify;
 }
 
 .content-right {
@@ -770,6 +788,7 @@ button {
 .description-text {
   font-size: 17px;
   line-height: 25.5px;
+  text-align: justify;
   color: #5d5d5d;
   margin-bottom: 1.5em;
 }
@@ -960,23 +979,15 @@ button {
 
 .brands-container {
   display: flex;
-  width: 1061px;
-  max-width: 100%;
+  max-width: 1061px;
+  width: 100%;
   flex-direction: column;
   align-items: stretch;
 }
 
-.brands-heading {
-  color: rgba(15, 71, 97, 1);
-  font-size: 42px;
-  font-weight: 600;
-  align-self: center;
-  
-}
-
 .brands-logo-grid {
   display: flex;
-  margin-top: 42px;
+
   align-items: stretch;
   gap: 20px;
   flex-wrap: wrap;
@@ -1002,7 +1013,7 @@ button {
   max-width: 100%;
 }
 
-.brand-logo-extra-wide {
+.brand-logo-heineken {
   aspect-ratio: 4.12;
   width: 383px;
   align-self: start;
@@ -1014,24 +1025,16 @@ button {
     align-content: center;
   } 
 
-  .brands-heading {
-    max-width: 100%;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-  }
-
+ 
   .brands-logo-grid {
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .brand-logo-sasol {
-    
     width: 100%;
   }
   .brand-logo-volvo {
     align-items: center;
-    
   }
   
 }
