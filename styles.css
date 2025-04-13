@@ -1022,24 +1022,34 @@ margin: 20px 0;
   
 }
 
-@media (max-width: 991px) {
-  .brands-section {
-    align-content: center;
-  } 
 
- 
+@media (max-width: 991px) {
+  /* Center the grid content by changing justification */
   .brands-logo-grid {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-  .brand-logo-sasol {
-    width: 100%;
-  }
-  .brand-logo-volvo {
-    align-items: center;
+    justify-content: center; /* center items rather than spacing them between */
   }
   
-}
+  /* Optionally, add auto margins on each logo so that they center individually */
+  .brand-logo {
+    margin: 0 auto;
+  }
+  
+  /* Adjust any items that may be misaligned by default */
+  
+  .brand-logo-volvo,  .brand-logo-heineken, .brand-logo-sasol {
+    align-self: center;
+    
+    
+  }
+  .brand-logo-heineken, .brand-logo-sasol {
+    align-self: center;
+    width: 200px;
+  }
+
+
+
+
+
 
 .courses-title {
   color: #0f4761;
