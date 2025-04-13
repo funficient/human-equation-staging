@@ -1368,16 +1368,16 @@ margin: 20px 0;
 
 .checkmark-icon {
   flex-shrink: 0;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .principles-list__text {
-  font-family: "Poppins", sans-serif;
-  font-size: 32px;
+ 
+  font-size: 20px;
   font-weight: 500;
   color: #5d5d5d;
-  line-height: 1.3;
+  line-height: 1.2;
   margin: 0;
 }
 
@@ -1385,7 +1385,7 @@ margin: 20px 0;
 
 
   .principles-list__text {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
@@ -1393,7 +1393,7 @@ margin: 20px 0;
 
 
   .principles-list__text {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .principles-list__item {
@@ -1406,10 +1406,10 @@ margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 64px 80px;
+  padding: 50px 80px;
   border-radius: 20px;
   width: 100%;
-  max-width: 1401px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #0f4761;
 }
@@ -1418,9 +1418,9 @@ margin: 20px 0;
   max-width: 1199px;
   color: #fff;
   text-align: justify;
-  font-family: "Poppins", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
+  
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .about-heading {
@@ -1484,10 +1484,10 @@ margin: 20px 0;
 
 .intro-section {
   display: flex;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 74px;
-  padding: 110px 0;
+  text-align: justify;
 }
 
 .intro-highlight {
@@ -1510,20 +1510,21 @@ margin: 20px 0;
 
 
 .logo-grid {
-  max-width: 1286px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .logo-row {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   margin-bottom: 40px;
 }
 
 .customer-logo {
   height: auto;
-  max-width: 286px;
+  max-width: 200px;
   object-fit: contain;
 }
 
@@ -1600,7 +1601,7 @@ margin: 20px 0;
 }
 
 .compliance-section {
-  padding: 46px 139px;
+  padding: 46px 250px;
   width: 100%;
   box-sizing: border-box;
   background-color: #fff;
@@ -1609,55 +1610,54 @@ margin: 20px 0;
 .recognition-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 44px;
+  gap: 20px;
 }
 
 .recognition-card {
   border: 1px solid #d9d9d9;
   border-radius: 20px;
-  height: 427px;
-  padding: 30px;
+  height: auto;
+  padding: 20px;
   background-color: rgba(241, 241, 242, 0.3);
 }
 
 .card-content {
-  padding: 43px 33px;
+  padding: 20px ;
 }
 
 .card-title {
   color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 42px;
+  font-size: 24px;
   font-weight: 600;
-  line-height: 52px;
+  line-height: 32px;
   margin-bottom: 15px;
 }
 
 .card-subtitle {
   color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 28px;
-  margin-bottom: 79px;
+  
 }
 
 .card-description {
   color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  
+  
   font-weight: 400;
-  line-height: 28px;
+  
 }
 
 .card-description strong {
   font-weight: 700;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .compliance-section {
     padding: 30px 20px;
   }
+
 
   .recognition-grid {
     grid-template-columns: repeat(2, 1fr);
