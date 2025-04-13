@@ -455,6 +455,10 @@ margin: 20px 0;
   margin-bottom: 10px;
 }
 
+.skills-grid h4.course-table-title:last-of-type {
+  border-bottom: none;
+}
+
 .course-table-duration {
   color: #333333;
   font-weight: 400;
@@ -524,12 +528,13 @@ margin: 20px 0;
 
 .highlight-text {
   color: #009999;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 45px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 36px;
   text-align: right;
   padding: 0 40px 40px;
   margin: 0;
+  grid-column: span 2;
 }
 
 .service-subtitle {
@@ -555,7 +560,12 @@ margin: 20px 0;
   background: #c7c7c7;
 }
 
-
+.subheading-text {
+  text-align: center;
+  color: var(--bs-gray);
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
 
 .btn {
   box-sizing: border-box;
@@ -590,8 +600,22 @@ margin: 20px 0;
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .skills-grid h4.course-table-title:last-of-type {
+    border-bottom: 1px solid #c7c7c7;
+  }
+
+  .workshop-grid h4.course-table-title:not(:last-of-type) {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c7c7c7;
+  }
 
 
+  .course-content-grid {
+    
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px;
+  }
   .btn {
     width: 100%;
     text-align: center;
@@ -616,7 +640,7 @@ margin: 20px 0;
 
   .course-table-title {
     font-size: 18px;
-    line-height: 32px;
+    line-height: 22px;
   }
 
   .course-table-description {
@@ -629,15 +653,17 @@ margin: 20px 0;
     grid-template-columns: 1fr;
   }
 
+ 
+
   .skill-title,
   .workshop-title {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .highlight-text {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
     padding: 20px;
   }
