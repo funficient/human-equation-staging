@@ -144,11 +144,12 @@ button {
 .hero-section {
   position: relative;
   width: 100%;
-  height: auto;  
+  max-height: max-content;  
+  overflow:visible;
+  
 }
 
 .hero-background {
-
   width: 100%;
   max-height: 60vh;
   object-fit: cover;
@@ -157,7 +158,7 @@ button {
 .hero-content {
   position: absolute;
   left: 0;
-  top: 25%;
+  top: 20%;
   max-width: 40vw;
   padding: 40px;
   border-radius: 0 20px 20px 0;
@@ -212,34 +213,55 @@ button {
   border: 3px solid #fff;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1400px) {
   .hero-content {
-    padding: 30px;
+    max-width: 80vw;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero-background {
+    max-height: max-content;
+    min-height: max-content;
+    
   }
 
+    .hero-content {
+     max-width: max-content;
+     height: max-content;
+     width: 100vw;
+     padding: 30px;
+     margin: 0;     
+     border-radius: 0;}
+
+
   .hero-heading {
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
   }
 
   .button-group {
     flex-direction: column;
+    
   }
 
   .button {
     width: 100%;
-    margin-bottom: 10px;
+    
   }
 }
 
 @media (max-width: 640px) {
+
   .hero-content {
     padding: 20px;
-  }
+      }
 
   .hero-heading {
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 30px;
+    line-height: 35px;
   }
 
   .button-group {
@@ -493,12 +515,7 @@ button {
   background: #c7c7c7;
 }
 
-.button-group {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 40px 0;
-}
+
 
 .btn {
   font-weight: 600;
@@ -532,10 +549,7 @@ button {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .button-group {
-    flex-direction: column;
-    align-items: center;
-  }
+
 
   .btn {
     width: 100%;
@@ -873,9 +887,7 @@ button {
     height: auto;
   }
 
-  .hero-title {
-    font-size: 36px;
-  }
+
 
   .cta-button {
     padding: 0 20px;
