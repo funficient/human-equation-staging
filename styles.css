@@ -422,6 +422,13 @@ margin: 20px 0;
   background-color: rgba(241, 241, 242, 0.3);
 }
 
+.course-content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
 .course-header {
   background-color: #0f4761;
   border-radius: 15px 15px 0 0;
@@ -454,9 +461,23 @@ margin: 20px 0;
   margin-bottom: 20px;
 }
 
-.course-tablep-description {
+.course-table-description {
   color: #333;
   font-weight: 400;
+}
+
+.strengths-service-table-subtitle {
+  color: #0f4761;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 20px;
+  max-width: 415px;
+}
+
+.strengths-service-table-description {
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .spacer {
