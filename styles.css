@@ -1035,17 +1035,43 @@ margin: 20px 0;
   }
   
   /* Adjust any items that may be misaligned by default */
-  
-  .brand-logo-volvo,  .brand-logo-heineken, .brand-logo-sasol {
+  .brand-logo-volvo {
+    /* Instead of align-items (which doesn’t work on an item),
+       use align-self so that this image centers within its row */
     align-self: center;
-    
-    
   }
-  .brand-logo-heineken, .brand-logo-sasol {
+  
+  .brand-logo-heineken {
+    align-self: center;
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  .brands-logo-grid {
+    justify-content: center; /* center items rather than spacing them between */
+  }
+  .brand-logo {
+    margin: 0 auto;
+  }
+  .brands-section {
+    align-content: center;
+  } 
+
+ 
+
+  .brand-logo-sasol {
     align-self: center;
     width: 200px;
   }
+  .brand-logo-volvo,  .brand-logo-heineken, .brand-logo-sasol {
+    align-self: center;}
+  
+}
 
+
+    
 
 
 
