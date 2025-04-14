@@ -237,6 +237,85 @@ button {
     max-width: 80vw;
 
   }
+
+  header .main-nav {
+    display: none;
+    }
+
+header .main-nav.active {
+    width: max-content;
+    height: calc(100% - 100px);
+    position: fixed;
+    top: 100px;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: -5px 5px 15px hsla(184, 100%, 18%, 0.2);
+    color: #003034;
+    padding: 2rem 2rem;
+    border-top-left-radius: 1em;
+    z-index: 1000;
+}
+
+header .main-nav.active {
+    height: calc(100% - 75px);
+    top: 75px;
+    color: #003034;
+}
+
+
+
+header .menuToggle.active {
+    filter: invert(0);
+}
+
+header .menuToggle {
+    filter: invert(1);
+}
+
+
+.menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(/assets/menu.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-left: 2em;
+}
+
+.menuToggle.active {
+    background: url(/assets/close-black.svg);
+    filter: invert(1);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(/assets/menu.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-left: 2em;
+  }
+  
+  .menuToggle.active {
+    background: url(/assets/close-black.svg);
+    filter: invert(1);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (max-width: 1000px) {
