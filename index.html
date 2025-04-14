@@ -22,38 +22,41 @@
 
 <body>
     <div class="page-container">
-   
       <div id="header-container"></div>
 
       <script>
-      // Load the header component
-      fetch('__header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-container').innerHTML = data;
-      
-        // Dynamically set the active class after the header is loaded
-        const links = document.querySelectorAll('.nav-link');
-        links.forEach(link => {
-          link.classList.remove('nav-item-active');
-          if (link.href === window.location.href) {
-            link.classList.add('nav-item-active');
-          }
-        });
-      });
-    </script>
-
-        <header class="main-header">
-        
-        <button class="mobile-menu" aria-label="Toggle menu">
-          <i class="ti ti-menu-2"></i>
-        </button>
-      </header>
-
-      <main class="main-content">
+        fetch('__header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+            
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.main-nav');
+            
+            if (menuToggle && navigation) {
+              menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+              });
+            } else {
+              console.error('menuToggle or navigation element not found.');
+            }
+            
+            // Set active link
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => {
+              link.classList.remove('nav-item-active');
+              if (link.href === window.location.href) {
+                link.classList.add('nav-item-active');
+              }
+            });
+          })
+          .catch(error => console.error('Error loading header:', error));
+      </script>
+    
 
 <!-------------- Hero section ---------------->
-
+<main class="main-content">
         <section class="hero-section">
           <img src="./assets/home-the-climate-reality-project-unsplash.jpg" alt="Background" class="hero-background" />
           <div class="hero-content">
@@ -313,16 +316,6 @@
 </script>
 
     </div>
-
-    <script type="text/javascript">
-
-        function toggleMenu() {
-          const menuToggle = document.querySelector('.menuToggle');
-          const navigation = document.querySelector('.main-nav');
-          menuToggle.classList.toggle('active');
-          navigation.classList.toggle('active');
-      }
-
-  </script>
+    
   </body>
 </html>

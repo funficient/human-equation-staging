@@ -266,8 +266,6 @@ header .main-nav.active {
     color: #003034;
 }
 
-
-
 header .menuToggle.active {
     filter: invert(0);
 }
@@ -275,7 +273,6 @@ header .menuToggle.active {
 header .menuToggle {
     filter: invert(1);
 }
-
 
 .menuToggle {
     position: relative;
@@ -297,7 +294,8 @@ header .menuToggle {
     background-position: center;
 }
 
-  .menuToggle {
+  header .menuToggle {
+    display: block;
     position: relative;
     width: 40px;
     height: 40px;
