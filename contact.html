@@ -88,11 +88,12 @@
 
       <section class="contact-form-section">
         <h2 class="section-title">Drop us a line and we'll get back to you.</h2>
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form" action="https://formsubmit.co/kate@funficient.com" method="POST">
           <div class="form-row">
             <input
               type="text"
               placeholder="Name"
+              name="Name"
               class="form-input"
               required
               aria-label="Name"
@@ -100,6 +101,7 @@
             <input
               type="tel"
               placeholder="Telephone"
+              name="Telephone"
               class="form-input"
               required
               aria-label="Telephone"
@@ -108,12 +110,14 @@
           <input
             type="email"
             placeholder="Email"
+            name="Email"
             class="form-input"
             required
             aria-label="Email"
           />
           <textarea
             placeholder="Let us know how we can help?"
+            name="Message"
             class="form-textarea"
             required
             aria-label="Message"
