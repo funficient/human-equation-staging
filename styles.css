@@ -734,11 +734,362 @@ button {
   }
 }
 
-/*---------------------------  */
+/*--------------------------- About Page ------------------ */
+/*--------------------------- Core principles ------------- */
+
+.core-principles {
+  width: 100%;
+}
+
+.core-principles__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.principles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.principles-list__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.checkmark-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.principles-list__text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5d5d5d;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .principles-list__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .principles-list__text {
+    font-size: 16px;
+  }
+
+  .principles-list__item {
+    gap: 15px;
+  }
+}
+
+/*--------------- About Us page - About section */
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 80px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #0f4761;
+}
+
+.about-content {
+  max-width: 1199px;
+  color: #fff;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.about-heading {
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-weight: normal;
+}
+
+.about-heading strong {
+  font-weight: 700;
+}
+
+.about-text {
+  display: inline;
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+@media (max-width: 991px) {
+  .about-section {
+    padding: 48px 40px;
+    margin:0 1rem 0 1rem;
+    width: 95vw;
+  }
+
+  .about-content {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    padding: 32px 20px;
+  }
+
+  .about-content {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 
 
+/*-------------- Customer logo section ----------------*/
 
+.customers-section {
+  width: 100%;
+  max-width: 1728px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
+}
 
+.content-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.intro-section {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 74px;
+  text-align: justify;
+}
+
+.intro-highlight {
+  color: #0f4761;
+  font-family: Poppins, sans-serif;
+  font-size: 23px;
+  line-height: 29.9px;
+  flex: 0 0 550px;
+  padding: 4px 0 52px 49px;
+  font-weight: normal;
+}
+
+.intro-description {
+  flex: 0 0 523px;
+  color: #5d5d5d;
+  font-family: Poppins, sans-serif;
+  font-size: 17px;
+  line-height: 25.5px;
+}
+
+.logo-grid {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.customer-logo {
+  height: auto;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+.heineken-logo {
+  height: 79px;
+  width: 286px;
+}
+
+.sasol-logo {
+  max-height: 120px;
+}
+
+.volvo-logo {
+  height: 120px;
+  max-width: 286px;
+  object-fit: contain;
+  width: 146px;
+}
+
+@media (max-width: 991px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 60px 0;
+    gap: 40px;
+  }
+
+  .intro-highlight {
+    flex: 1;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .intro-description {
+    flex: 1;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .logo-row {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .customers-section {
+    padding: 40px 15px;
+  }
+
+  .intro-section {
+    padding: 30px 0;
+  }
+
+  .intro-highlight {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .intro-description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .logo-row {
+    gap: 15px;
+  }
+
+  .customer-logo {
+    max-width: 45%;
+  }
+
+  .distell-logo {
+    max-width: 45%;
+  }
+}
+
+/*-----------------  Compliance section  ----------------*/
+.compliance-section {
+  padding: 46px 250px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.recognition-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.recognition-card {
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  height: auto;
+  padding: 20px;
+  background-color: rgba(241, 241, 242, 0.3);
+}
+
+.card-content {
+  padding: 20px ;
+}
+
+.card-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+
+.card-subtitle {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.card-description {
+  color: #000;
+  font-weight: 400; 
+}
+
+.card-description strong {
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .compliance-section {
+    padding: 30px 20px;
+  }
+
+  .recognition-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .recognition-card {
+    height: auto;
+    padding: 20px;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+
+  .card-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .recognition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+/*---------------------  Courses Page  -----------------*/
 
 .course-box {
   border: 3px solid #0f4761;
@@ -812,9 +1163,7 @@ button {
 
 .spacer {
   height: 20px;
-
 }
-
 
 .skills-grid {
   display: grid;
@@ -881,7 +1230,6 @@ button {
 .divider svg {
   width: 95%;
   justify-self: center;
-
   height: 1px;
   background: #c7c7c7;
 }
@@ -935,13 +1283,12 @@ button {
     border-bottom: 1px solid #c7c7c7;
   }
 
-
   .course-content-grid {
-    
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 30px;
   }
+
   .btn {
     width: 100%;
     text-align: center;
@@ -952,7 +1299,6 @@ button {
     margin-top: 20px;
   }
 }
-
 
 @media (max-width: 640px) {
   .section-title {
@@ -980,8 +1326,6 @@ button {
     grid-template-columns: 1fr;
   }
 
- 
-
   .skill-title,
   .workshop-title {
     font-size: 20px;
@@ -1005,8 +1349,6 @@ button {
     line-height: 22px;
   }
 }
-
-
 
 
 /*--------------------- Contact Section -----------------*/
@@ -1037,7 +1379,6 @@ button {
   font-weight: 500;
   max-width: 550px;
   line-height: 1.5;
-  
 }
 
 .contact-details {
@@ -1073,8 +1414,6 @@ button {
   padding: 50px 250px;
   text-align: center;
 }
-
-
 
 .contact-form {
   max-width: 1305px;
@@ -1121,26 +1460,19 @@ button {
 }
 
 
-
-
-/* Footer */
-.main-footer {
-  color: #fff;
-  padding: 50px 76px 25px;
+/*--------------- Footer ------------------*/
+.footer {
+  padding: 92px 20px 0;
   background-color: #0f4761;
 }
 
 .footer-content {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 30px;
-  margin-bottom: 50px;
-}
-
-.footer-title {
-  font-weight: 700;
-  margin-bottom: 20px;
-  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 30px;
 }
 
 .footer-nav {
@@ -1148,27 +1480,9 @@ button {
   flex-direction: column;
 }
 
-.footer-link {
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.footer-bottom {
-  border-top: 1px solid #fff;
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-}
-
-
 
 /* Responsive Design */
 @media (max-width: 991px) {
-
-
   .contact-section {
     padding: 50px 20px;
   }
@@ -1187,24 +1501,6 @@ button {
 
   .form-row {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 640px) {
-
-  .cta-button {
-    padding: 0 20px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 16px;
-  }
-
-  .main-footer {
-    padding: 30px 20px;
-  }
-
-  .footer-content {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1236,27 +1532,6 @@ button {
   outline-offset: 2px;
 }
 
-
-
-
-/* footer */
-
-.footer {
-  padding: 92px 20px 0;
-  background-color: #0f4761;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  padding-bottom: 30px;
-}
-
-
-
 .footer-section-title {
   color: #fff;
   font-size: 14px;
@@ -1266,7 +1541,6 @@ button {
   margin-bottom: 15px;
 }
 
-/* Contact Section */
 .footer-contact-section {
   flex: 1;
 }
@@ -1297,7 +1571,6 @@ button {
   font-style: normal;
 }
 
-/* Navigation Section */
 .footer-navigation-section {
   flex: 1;
 }
@@ -1328,7 +1601,6 @@ button {
   text-decoration: underline;
 }
 
-/* Courses Section */
 .footer-courses-section {
   flex: 1;
 }
@@ -1337,15 +1609,15 @@ button {
   margin-top: 48px;
 }
 
-/* Footer Bottom */
-
-
 .footer-bottom {
   max-width: 1200px;
-  margin: auto;
+  border-top: 1px solid #fff;
+  padding-top: 30px;
+  padding: 30px 0 39px;
   display: flex;
   justify-content: space-between;
-  padding: 30px 0 39px;
+  font-size: 13px;
+  margin: auto;
 }
 
 .copyright,
@@ -1356,7 +1628,6 @@ button {
   margin: 0;
 }
 
-/* Responsive Styles */
 @media (max-width: 991px) {
   .footer-content {
     flex-direction: column;
@@ -1383,378 +1654,3 @@ button {
     text-align: center;
   }
 }
-
-
-
-.core-principles {
-  width: 100%;
-}
-
-.core-principles__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.principles-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.principles-list__item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.checkmark-icon {
-  flex-shrink: 0;
-  width: 30px;
-  height: 30px;
-}
-
-.principles-list__text {
- 
-  font-size: 20px;
-  font-weight: 500;
-  color: #5d5d5d;
-  line-height: 1.2;
-  margin: 0;
-}
-
-@media (max-width: 991px) {
-
-
-  .principles-list__text {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 640px) {
-
-
-  .principles-list__text {
-    font-size: 16px;
-  }
-
-  .principles-list__item {
-    gap: 15px;
-  }
-}
-/* About Us page - About section */
-
-.about-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 80px;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #0f4761;
-}
-
-.about-content {
-  max-width: 1199px;
-  color: #fff;
-  text-align: justify;
-  
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.about-heading {
-  display: inline;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-  font-weight: normal;
-}
-
-.about-heading strong {
-  font-weight: 700;
-}
-
-.about-text {
-  display: inline;
-  font-weight: 400;
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-}
-
-@media (max-width: 991px) {
-  .about-section {
-    padding: 48px 40px;
-    margin:0 1rem 0 1rem;
-    width: 95vw;
-
-  }
-
-  .about-content {
-    font-size: 22px;
-    line-height: 28px;
-  }
-}
-
-@media (max-width: 640px) {
-  .about-section {
-    padding: 32px 20px;
-    
-  }
-
-  .about-content {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-
-
-/* Customer logo section */
-
-.customers-section {
-  width: 100%;
-  max-width: 1728px;
-  margin: 0 auto;
-  padding: 60px 20px;
-  position: relative;
-}
-
-.content-wrapper {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.intro-section {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 74px;
-  text-align: justify;
-}
-
-.intro-highlight {
-  color: #0f4761;
-  font-family: Poppins, sans-serif;
-  font-size: 23px;
-  line-height: 29.9px;
-  flex: 0 0 550px;
-  padding: 4px 0 52px 49px;
-  font-weight: normal;
-}
-
-.intro-description {
-  flex: 0 0 523px;
-  color: #5d5d5d;
-  font-family: Poppins, sans-serif;
-  font-size: 17px;
-  line-height: 25.5px;
-}
-
-
-.logo-grid {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.logo-row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-.customer-logo {
-  height: auto;
-  max-width: 200px;
-  object-fit: contain;
-}
-
-.heineken-logo {
-  height: 79px;
-  width: 286px;
-}
-
-.sasol-logo {
-  max-height: 120px;
-}
-
-.volvo-logo {
-  height: 120px;
-  max-width: 286px;
-  object-fit: contain;
-  width: 146px;
-}
-
-@media (max-width: 991px) {
-  .intro-section {
-    flex-direction: column;
-    padding: 60px 0;
-    gap: 40px;
-  }
-
-  .intro-highlight {
-    flex: 1;
-    padding: 0;
-    max-width: 100%;
-  }
-
-  .intro-description {
-    flex: 1;
-    padding: 0;
-    max-width: 100%;
-  }
-
-
-  .logo-row {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 640px) {
-  .customers-section {
-    padding: 40px 15px;
-  }
-
-  .intro-section {
-    padding: 30px 0;
-  }
-
-  .intro-highlight {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .intro-description {
-    font-size: 15px;
-    line-height: 22px;
-  }
-
-
-
-  .logo-row {
-    gap: 15px;
-  }
-
-  .customer-logo {
-    max-width: 45%;
-  }
-
-  .distell-logo {
-    max-width: 45%;
-  }
-}
-
-.compliance-section {
-  padding: 46px 250px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #fff;
-}
-
-.recognition-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.recognition-card {
-  border: 1px solid #d9d9d9;
-  border-radius: 20px;
-  height: auto;
-  padding: 20px;
-  background-color: rgba(241, 241, 242, 0.3);
-}
-
-.card-content {
-  padding: 20px ;
-}
-
-.card-title {
-  color: #000;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
-  margin-bottom: 15px;
-}
-
-.card-subtitle {
-  color: #000;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 28px;
-  
-}
-
-.card-description {
-  color: #000;
-  
-  
-  font-weight: 400;
-  
-}
-
-.card-description strong {
-  font-weight: 700;
-}
-
-@media (max-width: 1200px) {
-  .compliance-section {
-    padding: 30px 20px;
-  }
-
-
-  .recognition-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .recognition-card {
-    height: auto;
-    padding: 20px;
-  }
-
-  .card-content {
-    padding: 20px;
-  }
-
-  .card-title {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  .card-subtitle {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 40px;
-  }
-
-  .card-description {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-
-@media (max-width: 640px) {
-  .recognition-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card-title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-}
-
-
-/* Debugged to here */
-
-
-
