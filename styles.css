@@ -194,9 +194,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-margin: 20px 0;
+  margin: 20px 0;
   gap: 15px;
-  
   
 }
 
@@ -242,9 +241,7 @@ margin: 20px 0;
 
 @media (max-width: 1000px) {
   .hero-background {
-    max-height: max-content;
-    min-height: max-content;
-    
+    height: max-content;
   }
 
     .hero-content {
@@ -257,13 +254,14 @@ margin: 20px 0;
 
 
   .hero-heading {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 36px;
     text-align: center;
   }
 
   .button-group, .btn-group {
     flex-direction: column;
+    margin: 0 1rem;
     
   }
 
@@ -281,7 +279,7 @@ margin: 20px 0;
 
   .hero-heading {
     font-size: 30px;
-    line-height: 35px;
+    line-height: 32px;
   }
 
   .button-group, .btn-group {
@@ -290,7 +288,8 @@ margin: 20px 0;
 
   .button {
     font-size: 16px;
-    line-height: 60px;
+    line-height: 50px;
+    text-align: center;
     padding: 0 20px;
   }
 }
@@ -630,8 +629,9 @@ margin: 20px 0;
 
 @media (max-width: 640px) {
   .section-title {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 600;
   }
 
   .course-content-table {
@@ -1020,7 +1020,7 @@ margin: 20px 0;
 .brands-section {
   background-color: rgba(244, 244, 244, 1);
   display: flex;
-  padding: 58px 80px 115px;
+  padding: 0 25rem 3rem 25rem;
   flex-direction: column;
   overflow: hidden;
   align-items: center;
@@ -1028,7 +1028,7 @@ margin: 20px 0;
 
 .brands-container {
   display: flex;
-  max-width: 1061px;
+  max-width: 1000px;
   width: 100%;
   flex-direction: column;
   align-items: stretch;
@@ -1036,7 +1036,6 @@ margin: 20px 0;
 
 .brands-logo-grid {
   display: flex;
-
   align-items: stretch;
   gap: 20px;
   flex-wrap: wrap;
@@ -1048,10 +1047,11 @@ margin: 20px 0;
   object-position: center;
 }
 
-.brand-logo-sasol {
-  aspect-ratio: 2.52;
-  width: 30%;
-}
+ .brand-logo-sasol {
+  width: auto;
+  height: 150px;
+ 
+} 
 
 .brand-logo-volvo {
   aspect-ratio: 1;
@@ -1063,22 +1063,21 @@ margin: 20px 0;
 }
 
 .brand-logo-heineken {
-  aspect-ratio: 4.12;
-  width: 383px;
+  width: 350px;
   align-self: start;
   
 }
 
 
 @media (max-width: 991px) {
-  /* Center the grid content by changing justification */
+  
   .brands-logo-grid {
-    justify-content: center; /* center items rather than spacing them between */
+    justify-content: center; 
   }
   
-  /* Optionally, add auto margins on each logo so that they center individually */
+  
   .brand-logo {
-    margin: 0 auto;
+    margin: auto;
   }
   
   /* Adjust any items that may be misaligned by default */
@@ -1104,6 +1103,7 @@ margin: 20px 0;
   }
   .brands-section {
     align-content: center;
+    padding: 0 5rem 3rem 5rem ;
   } 
 
  
@@ -1172,8 +1172,8 @@ margin: 20px 0;
   font-size: 38px;
   font-weight: 600;
   line-height: 40px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   max-width: 75%;
 }
 
@@ -1184,7 +1184,7 @@ margin: 20px 0;
   padding: 15px 30px;
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 2rem;
   background-color: rgba(238, 238, 238, 0.3);
 }
 
@@ -1225,7 +1225,7 @@ margin: 20px 0;
   }
 
   .course-heading {
-    margin-top: 20px;
+    margin-top: 3rem;
   }
 
   .course-content {
@@ -1258,11 +1258,12 @@ margin: 20px 0;
 
   .course-heading {
     font-size: 32px;
-    line-height: 42px;
+    line-height: 38px;
   }
 
   .card-course-duration {
     font-size: 14px;
+    top: 1rem;
     padding: 10px 20px;
   }
 

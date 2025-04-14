@@ -35,10 +35,7 @@
         // Dynamically set the active class after the header is loaded
         const links = document.querySelectorAll('.nav-link');
         links.forEach(link => {
-          // Remove the active class from all links
           link.classList.remove('nav-item-active');
-      
-          // Add the active class only to the matching link
           if (link.href === window.location.href) {
             link.classList.add('nav-item-active');
           }
@@ -220,23 +217,23 @@
 </section>
       </div>     
 
-      <section class="brands-section">
-        <div class="brands-container">
+      <section class="brands-section ">
+        <div class="brands-container ">
           <h1 class="section-title">Brands who trust us</h1>
           <div class="brands-logo-grid">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/54dd5b83c7acc29a9c4f02c5acfb9030bfeb4e30?placeholderIfAbsent=true&apiKey=3483210683f24772b4cf201ccffb0c7d"
-              alt="Trusted brand logo"
-              class="brand-logo brand-logo-sasol"
-            />
+              src="assets/SSL_BIG.svg"
+              alt="Trusted brand logo Sasol"
+              class="brand-logo brand-logo-sasol"></img>
+
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c6a4f57c4262afffc5480493bbceadd17da82bb?placeholderIfAbsent=true&apiKey=3483210683f24772b4cf201ccffb0c7d"
-              alt="Trusted brand logo"
+              src="assets/volvo-svgrepo-com.svg"
+              alt="Trusted brand logo Volvo"
               class="brand-logo brand-logo-volvo"
             />
             <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a5695288ea4d05e164738c5c8a8e5b95f42ccbd?placeholderIfAbsent=true&apiKey=3483210683f24772b4cf201ccffb0c7d"
-              alt="Trusted brand logo"
+              src="assets/HeinekenLogo.svg"
+              alt="Trusted brand logo Heineken"
               class="brand-logo brand-logo-heineken"
             />
           </div>
@@ -286,7 +283,7 @@
                 newly acquired skills to end off the programme.
               </p>
             </div>
-            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/956b79e0b64978ad4bec7ce8262d83dacfab3d40" alt="Team meeting" class="course-image" />
+            <img src="assets/card-christina-wocintechchat-com-unsplash.jpg" alt="Team meeting" class="course-image" />
           </article>
         </div>
       </section>
