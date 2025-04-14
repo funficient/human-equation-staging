@@ -130,7 +130,7 @@ button {
 
 .nav-item-active {
   border-bottom: 2px solid #0f4761; 
-  font-weight: bold; /* Make the active link bold */
+  font-weight: bold; 
 }
 
 .nav-link.sign-in {
@@ -139,8 +139,6 @@ button {
   border-radius: 5px;
   background-color: var(--primary-color);
 }
-
-
 
 .page-container {
   justify-content: center;
@@ -238,82 +236,6 @@ button {
 
   }
 
-  header .main-nav {
-    display: none;
-    }
-
-header .main-nav.active {
-    width: max-content;
-    height: calc(100% - 100px);
-    position: fixed;
-    top: 100px;
-    right: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: -5px 5px 15px hsla(184, 100%, 18%, 0.2);
-    color: #003034;
-    padding: 2rem 2rem;
-    border-top-left-radius: 1em;
-    z-index: 1000;
-}
-
-header .main-nav.active {
-    height: calc(100% - 75px);
-    top: 75px;
-    color: #003034;
-}
-
-header .menuToggle.active {
-    filter: invert(0);
-}
-
-header .menuToggle {
-    filter: invert(1);
-}
-
-.menuToggle {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: url(/assets/menu.svg);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    margin-left: 2em;
-}
-
-.menuToggle.active {
-    background: url(/assets/close-black.svg);
-    filter: invert(1);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-  header .menuToggle {
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: url(/assets/menu.svg);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    margin-left: 2em;
-  }
-  
-  .menuToggle.active {
-    background: url(/assets/close-black.svg);
-    filter: invert(1);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -1013,9 +935,6 @@ header .menuToggle {
     padding: 10px;
   }
 
-  .nav-links {
-    display: none;
-  }
 
   .contact-section {
     padding: 50px 20px;
@@ -1044,17 +963,12 @@ header .menuToggle {
     height: auto;
   }
 
-
-
   .cta-button {
     padding: 0 20px;
     height: 60px;
     line-height: 60px;
     font-size: 16px;
   }
-
-
-
 
   .main-footer {
     padding: 30px 20px;
@@ -1146,30 +1060,7 @@ header .menuToggle {
 }
 
 
-@media (max-width: 991px) {
   
-  .brands-logo-grid {
-    justify-content: center; 
-  }
-  
-  
-  .brand-logo {
-    margin: auto;
-  }
-  
-  /* Adjust any items that may be misaligned by default */
-  .brand-logo-volvo {
-    /* Instead of align-items (which doesn’t work on an item),
-       use align-self so that this image centers within its row */
-    align-self: center;
-  }
-  
-  .brand-logo-heineken {
-    align-self: center;
-  }
-}
-
-
 
 @media (max-width: 991px) {
   .brands-logo-grid {
@@ -1189,16 +1080,11 @@ header .menuToggle {
     align-self: center;
     width: 200px;
   }
+
   .brand-logo-volvo,  .brand-logo-heineken, .brand-logo-sasol {
     align-self: center;}
   
 }
-
-
-    
-
-
-
 
 
 .courses-title {

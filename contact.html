@@ -20,7 +20,23 @@
   <body>
     <div class="page-container">
 
-      <div id="header-container"></div>
+      <div id="header-container">
+        <header class="main-header">
+          <a href="index.html" aria-label="Go to the homepage">
+              <img src="assets/human-equation-logo.jpg.png" alt="The Human Equation Logo" class="company-logo" />
+            </a>
+            
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link ">Home</a>
+            <a href="about.html" class="nav-link ">About Us</a>
+            <a href="courses.html" class="nav-link ">Training Courses</a>
+            <a href="contact.html" class="nav-link nav-item-active">Contact Us</a>
+            <a href="#" class="nav-link sign-in">Student Sign in</a>
+          </nav>
+      
+        </header>
+
+      </div>
       
 
       <section class="hero-section">
@@ -108,17 +124,13 @@
     </main>
 
     <div id="footer-container"></div>
-
-    <script type="text/javascript">
-
-      function toggleMenu() {
-        const menuToggle = document.querySelector('.menuToggle');
-        const navigation = document.querySelector('.main-nav');
-        menuToggle.classList.toggle('active');
-        navigation.classList.toggle('active');
-    }
-
-</script>
+    <script>
+      fetch('__footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
 
   </body>
 </html>

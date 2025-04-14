@@ -22,38 +22,24 @@
 
 <body>
     <div class="page-container">
-      <div id="header-container"></div>
+      <div id="header-container">
 
-      <script>
-        fetch('__header.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('header-container').innerHTML = data;
+        <header class="main-header">
+          <a href="index.html" aria-label="Go to the homepage">
+              <img src="assets/human-equation-logo.jpg.png" alt="The Human Equation Logo" class="company-logo" />
+            </a>
             
-            const menuToggle = document.querySelector('.menuToggle');
-            const navigation = document.querySelector('.main-nav');
-            
-            if (menuToggle && navigation) {
-              menuToggle.addEventListener('click', function() {
-                menuToggle.classList.toggle('active');
-                navigation.classList.toggle('active');
-              });
-            } else {
-              console.error('menuToggle or navigation element not found.');
-            }
-            
-            // Set active link
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(link => {
-              link.classList.remove('nav-item-active');
-              if (link.href === window.location.href) {
-                link.classList.add('nav-item-active');
-              }
-            });
-          })
-          .catch(error => console.error('Error loading header:', error));
-      </script>
-    
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link nav-item-active">Home</a>
+            <a href="about.html" class="nav-link">About Us</a>
+            <a href="courses.html" class="nav-link">Training Courses</a>
+            <a href="contact.html" class="nav-link">Contact Us</a>
+            <a href="#" class="nav-link sign-in">Student Sign in</a>
+          </nav>
+      
+        </header>
+      
+      </div>    
 
 <!-------------- Hero section ---------------->
 <main class="main-content">
@@ -311,10 +297,9 @@
         fetch('__footer.html')
             .then(response => response.text())
             .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-    });
-</script>
-
+              document.getElementById('footer-container').innerHTML = data;
+          });
+      </script>
     </div>
     
   </body>
