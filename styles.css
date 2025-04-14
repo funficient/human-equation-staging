@@ -591,7 +591,7 @@ button {
   .section-title {
     font-size: 42px;
     line-height: 56px;
-    
+    margin-top: 2rem;
   }
 
   .skills-grid,
@@ -1531,18 +1531,21 @@ button {
 @media (max-width: 991px) {
   .about-section {
     padding: 48px 40px;
+    margin:0 1rem 0 1rem;
+    width: 95vw;
+
   }
 
   .about-content {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 
 @media (max-width: 640px) {
   .about-section {
     padding: 32px 20px;
-    border-radius: 12px;
+    
   }
 
   .about-content {
@@ -1613,13 +1616,17 @@ button {
   object-fit: contain;
 }
 
-.distell-logo {
+.heineken-logo {
   height: 79px;
   width: 286px;
 }
 
+.sasol-logo {
+  max-height: 120px;
+}
+
 .volvo-logo {
-  height: 145px;
+  height: 120px;
   max-width: 286px;
   object-fit: contain;
   width: 146px;
