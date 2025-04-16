@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Human Equation - Training & Development</title>
+    <meta name="description" content="The Human Equation is a training and development company with more than 24 years experience that provides world-class consulting and training/development programmes to help our clients effect positive, sustainable change in both business and personal life.">
+    <meta name="keywords" content="Training, Consulting, Business Excellence, Human Equation, Soft Skills, Team Dynamics, Employee Engagement" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="components.js"></script>
+  </head>
+
+  <body>
+    <div class="page-container">
+
+      <div id="header-container">
+        <header class="main-header">
+          <a href="index.html" aria-label="Go to the homepage">
+              <img src="assets/human-equation-logo.jpg.png" alt="The Human Equation Logo" class="company-logo" />
+            </a>
+            
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link ">Home</a>
+            <a href="about.html" class="nav-link ">About Us</a>
+            <a href="courses.html" class="nav-link ">Courses</a>
+            <a href="contact.html" class="nav-link nav-item-active">Contact Us</a>
+            <a href="#" class="nav-link sign-in">Student Sign in</a>
+          </nav>
+      
+        </header>
+
+      </div>
+      
+
+      <section class="hero-section">
+        <img src="./assets/404-thomas-bormans-_unsplash.jpg" alt="Background" class="hero-background" />
+        <div class="hero-content">
+          <h1 class="hero-heading">
+            Oops!  Something is broken here. We can't find that page...
+          </h1>
+          <div class="button-group">
+            <a href="index.html" class="button button-primary" aria-label="Go back home">
+            GO HOME
+            </a>
+            
+            <a href="#" class="button button-secondary" aria-label="Download the course prospectus">
+              DOWNLOAD THE PROSPECTUS
+            </a>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+  
+
+  
+    </main>
+
+    <div id="footer-container"></div>
+    <script>
+      fetch('__footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+    </script>
+
+  </body>
+</html>
