@@ -512,6 +512,7 @@ button {
   flex-direction: column;
   overflow: hidden;
   align-items: center;
+  justify-content: center;
 }
 
 .brands-container {
@@ -533,6 +534,7 @@ button {
 .brand-logo {
   object-fit: contain;
   object-position: center;
+  margin: auto;
 }
 
  .brand-logo-sasol {
@@ -584,6 +586,11 @@ button {
   .brand-logo {
     width: 200px;
     height: auto;
+  }
+
+  .brand-logo-volvo {
+    width: 130px;
+    padding: 10px;
   }
 }
 
