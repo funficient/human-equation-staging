@@ -1551,7 +1551,7 @@ button {
 .member-image-container.right {
     height: 650px;
     width: 500px;
-    top: -300px;
+    top: -350px;
 }
 
 .gradient-overlay {
@@ -1567,18 +1567,18 @@ button {
 
 .member-image {
     position: relative;
-    width: 580px;
+    width: 100%;
     object-fit: cover;
     border-radius: 20px;
     margin: 33px auto 0;
 }
 
 .member-image-container.left .member-image {
-    height: 715px;
+    height: 650px;
 }
 
 .member-image-container.right .member-image {
-    height: 690px;
+    height: 650px;
 }
 
 /* Member info styles */
@@ -1591,7 +1591,7 @@ button {
 .member-info.text-right {
   position: relative;
     text-align: right;
-    top: -300px;
+    top: -350px;
 }
 
 .member-name {
@@ -1622,6 +1622,9 @@ button {
         padding: 40px 20px;
     }
 
+    .contact-description {
+      padding: 20px;
+    }
     .contact-details {
         padding: 20px;
         margin: 20px;
@@ -1636,8 +1639,6 @@ button {
         gap: 64px;
         margin-bottom: 0;
     }
-
-
   
     .team-member {
         flex-direction: column;
@@ -1653,8 +1654,8 @@ button {
 
     .member-image-container.left,
     .member-image-container.right {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 550px;
         top: auto;
     }
 
@@ -1714,7 +1715,7 @@ button {
   }
 
   .contact-details {
-    padding: 40px;
+    padding: 20px;
   }
 
   .contact-form-section {
