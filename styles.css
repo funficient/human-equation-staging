@@ -155,6 +155,7 @@ button {
   top: 20%;
   max-width: 40vw;
   padding: 2rem;
+  padding-left: 4rem;
   border-radius: 0 20px 20px 0;
   text-align: left;
   background-color: #0f4761;
@@ -162,24 +163,24 @@ button {
 
 .hero-heading {
   color: #fff;
-  font-size: 42px;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 3.5rem;
   max-width: 1144px;
   margin: 0 0 40px 0;
 }
 
 .accent-header-text {
   color: white;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-style: italic;
 
 }
 .button-group {
   display: flex;
   justify-items: center;
-  gap: 15px;
-  margin-top: 40px;
+  gap: 1rem;
+  margin-top: 2.5rem;
 }
 
 .btn-group {
@@ -187,15 +188,15 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
-  gap: 15px;
+  margin: 1.5rem 0;
+  gap: 1rem;
   
 }
 
 .button {
   box-sizing: border-box;
   font-weight: 600;
-  padding: 20px 40px;
+  padding: 1.2rem 2.7rem;
   border-radius: 10px;
   cursor: pointer;
   transition:
@@ -243,14 +244,14 @@ button {
      max-width: max-content;
      height: max-content;
      width: 100vw;
-     padding: 30px;
+     padding: 1.8rem;
      margin: 0;     
      border-radius: 0;
    }
 
   .hero-heading {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 2.7rem;
     text-align: center;
   }
 
@@ -267,23 +268,23 @@ button {
 @media (max-width: 640px) {
 
   .hero-content {
-    padding: 20px;
+    padding: 1.5rem;
       }
 
   .hero-heading {
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 
   .button-group, .btn-group {
-    gap: 10px;
+    gap: 0.8rem;
   }
 
   .button {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 50px;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 1.5rem;
   }
 }
 
@@ -291,7 +292,7 @@ button {
 
 
 .stats-section {
-  padding: 20px;
+  padding: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,7 +304,7 @@ button {
 .stats-container {
   border-radius: 20px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 1.5rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -318,7 +319,7 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  padding: 0.8rem;
   width: 25%;
 }
 
@@ -337,15 +338,15 @@ button {
 
 .stat-number {
   color: #5d5d5d;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
-  line-height: 74.4px;
-  margin: 15px 0;
+  line-height: 4rem;
+  margin: 1rem 0;
 }
 
 .stat-description {
   color: #5d5d5d;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.2em;
   max-width: 280px;
@@ -359,22 +360,22 @@ button {
 
   .stats-container {
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 1.5rem;
   }
 
   .stat-card {
     width: 50%;
-    padding: 15px;
+    padding: 1rem;
   }
 
   .stat-number {
-    font-size: 36px;
-    line-height: 56px;
+    font-size: 2.3rem;
+    line-height: 3rem;
   }
 
   .stat-description {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
   }
   .icon-wrapper svg {
     width: auto;
@@ -384,22 +385,38 @@ button {
 
 @media (max-width: 640px) {
   .stats-container {
-    padding: 10px;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
   }
 
+   .stats-section {
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .icon-wrapper {
+    height: 60px;
+  }
   .stat-card {
     width: 100%;
-    padding: 20px 10px;
+    padding: 0.7rem 0.3rem;
+    margin: 0;
   }
 
   .stat-number {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 2.3rem;
+    line-height: 2rem;
+    margin: 0.5rem 0;
+
   }
 
   .stat-description {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 }
 
@@ -409,7 +426,8 @@ button {
 .landing-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.5rem;
+  
 }
 
 .tagline-section {
@@ -418,26 +436,27 @@ button {
 }
 
 .tagline {
-  font-size: 54px;
+  font-size: 3.5rem;
   font-weight: 500;
   color: #008080;
-  line-height: 74.4px;
+  line-height: 4.6rem;
 }
 
 .content-section {
   display: flex;
-  gap: 74px;
-  padding: 50px 0;
+  gap: 4.5rem;
+  padding: 3rem 1rem;
 }
 
 .content-left {
-  flex: 0 0 550px;
-  padding-left: 49px;
+  flex: 1 1 0%;
+  max-width: 35rem;
+  padding-left: 3rem;
 }
 
 .intro-text {
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 1.3rem;
+  line-height: 2rem;
   font-weight: 500;
   color: #0f4761;
   text-align: justify;
@@ -448,12 +467,13 @@ button {
 }
 
 .content-right {
-  flex: 0 0 523px;
+  flex: 1 1 0%;
+  max-width: 35rem;
 }
 
 .description-text {
-  font-size: 18px;
-  line-height: 25.5px;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
   text-align: justify;
   color: #5d5d5d;
   margin-bottom: 1.5em;
@@ -465,18 +485,19 @@ button {
 
 @media (max-width: 991px) {
   .tagline {
-    font-size: 48px;
-    line-height: 54px;
+    font-size: 3rem;
+    line-height: 3.4rem;
   }
 
   .content-section {
     flex-direction: column;
-    padding: 60px 0;
-    gap: 40px;
+    padding: 3.75rem 0;
+    gap: 2rem;
   }
 
   .content-left,
   .content-right {
+    padding-left: 0;
     flex: 1;
     max-width: 100%;
   }
@@ -484,22 +505,22 @@ button {
 
 @media (max-width: 640px) {
   .tagline {
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 2rem;
+    line-height: 2.7rem;
   }
 
   .content-section {
-    padding: 40px 0;
+    padding: 2rem 0;
   }
 
   .intro-text {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
   }
 
   .description-text {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 }
 
@@ -526,7 +547,7 @@ button {
 .brands-logo-grid {
   display: flex;
   align-items: stretch;
-  gap: 20px;
+  gap: 1.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -539,13 +560,12 @@ button {
 
  .brand-logo-sasol {
   width: auto;
-  height: 150px;
- 
+  height: 7.5rem;
 } 
 
 .brand-logo-volvo {
   aspect-ratio: 1;
-  width: 111px;
+  width: 7rem;
   margin-top: auto;
   margin-bottom: auto;
   flex-shrink: 0;
@@ -553,7 +573,7 @@ button {
 }
 
 .brand-logo-heineken {
-  width: 350px;
+  width: 20rem;
   align-self: start;
 }
 
@@ -574,7 +594,7 @@ button {
 
   .brand-logo-sasol {
     align-self: center;
-    width: 200px;
+    width: 12.5rem;
   }
 
   .brand-logo-volvo,  .brand-logo-heineken, .brand-logo-sasol {
@@ -584,13 +604,13 @@ button {
 
 @media (max-width: 640px) {
   .brand-logo {
-    width: 200px;
+    width: 12.5rem;
     height: auto;
   }
 
   .brand-logo-volvo {
-    width: 130px;
-    padding: 10px;
+    width: 8.125rem;
+    padding: 0.8rem;
   }
 }
 
@@ -599,28 +619,19 @@ button {
 .courses-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 1.2rem;
 }
-
-/* .courses-title {
-  color: #0f4761;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 74.4px;
-  text-align: center;
-  margin-bottom: 40px;
-} */
 
 .courses-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.2rem;
 }
 
 .course-card {
   border-radius: 20px;
-  padding: 40px;
+  padding: 2rem;
   color: #fff;
   position: relative;
   width: 100%;
@@ -647,16 +658,15 @@ button {
 }
 
 .course-heading {
-  font-size: 38px;
+  font-size: 2.2rem;
   font-weight: 600;
-  line-height: 40px;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  line-height: 2.5rem;
+  margin: 4rem 0 2rem 0;
   max-width: 75%;
 }
 
 .card-course-duration {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   border-radius: 15px 0 0 15px;
   padding: 15px 30px;
@@ -667,8 +677,8 @@ button {
 }
 
 .card-course-description {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.4rem;
   font-weight: 400;
   color: white;
   max-width: 500px;
@@ -716,35 +726,30 @@ button {
   }
 
   .courses-title {
-    font-size: 42px;
-    line-height: 56px;
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 
 @media (max-width: 640px) {
   .course-card {
-    padding: 20px;
-  }
-
-  .courses-title {
-    font-size: 32px;
-    line-height: 42px;
+    padding: 1.2rem;
   }
 
   .course-heading {
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .card-course-duration {
-    font-size: 14px;
+    font-size: 0.8rem;
     top: 1rem;
-    padding: 10px 20px;
+    padding: 0.7rem 1.2rem;
   }
 
   .card-course-description {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 
   .course-image {
