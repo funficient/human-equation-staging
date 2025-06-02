@@ -1934,3 +1934,77 @@ flex: 1 1 0;
     text-align: center;
   }
 }
+
+
+.chat-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+} 
+
+.chat-intro, .chat-bot {
+  padding: 2rem;
+}
+
+.chat-intro {
+  background-color: #0d3a4f;
+  color: #fff;
+  border-top-right-radius: 1rem;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.chat-intro h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.chat-intro h3 {
+  font-size: 1.7rem;
+  
+  margin-bottom: 5rem;
+}
+
+.chat-intro p {
+  margin-top: 2rem;
+  padding: 0 8rem;
+}
+p+p {
+  margin-top: 1.2rem;
+  line-height: 1.5rem;
+  
+}
+
+
+@media (max-width: 1200px) {
+  .chat-section {
+  grid-template-columns: 1fr ;
+  gap: 1rem;
+
+} 
+
+.chat-intro {
+  border-top-right-radius: 0rem;
+  
+}
+
+.chat-intro h2 {
+  font-size: 2.5rem;
+  
+}
+
+.chat-intro h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.chat-intro p {
+  margin: 2rem 0;
+  padding: 0 2rem;
+}
+
+}
+
