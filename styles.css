@@ -1935,16 +1935,16 @@ flex: 1 1 0;
   }
 }
 
+/* Chatbot peak performance landing page */
 
 .chat-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-
 } 
 
 .chat-intro, .chat-bot {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .chat-intro {
@@ -1954,6 +1954,16 @@ flex: 1 1 0;
   align-content: center;
   justify-content: center;
   text-align: center;
+  padding: 2rem 10rem;
+}
+
+
+.chat-intro img {
+  display: block;
+  margin: 0 auto 2rem auto;
+  max-width: 120px;
+  width: 60%;
+  height: auto;
 }
 
 .chat-intro h2 {
@@ -1964,18 +1974,23 @@ flex: 1 1 0;
 
 .chat-intro h3 {
   font-size: 1.7rem;
-  
   margin-bottom: 5rem;
+  max-width: 33vw;
+  word-break: break-word;
+  
+  white-space: normal;
 }
 
 .chat-intro p {
   margin-top: 2rem;
-  padding: 0 8rem;
+  max-width: 25vw;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 p+p {
   margin-top: 1.2rem;
   line-height: 1.5rem;
-  
 }
 
 
@@ -1983,28 +1998,36 @@ p+p {
   .chat-section {
   grid-template-columns: 1fr ;
   gap: 1rem;
-
 } 
 
 .chat-intro {
   border-top-right-radius: 0rem;
-  
+  padding: 2rem 5rem;
 }
 
 .chat-intro h2 {
   font-size: 2.5rem;
-  
 }
 
 .chat-intro h3 {
   font-size: 1.5rem;
   margin-bottom: 3rem;
+  max-width: 90vw;
 }
 
 .chat-intro p {
   margin: 2rem 0;
-  padding: 0 2rem;
+  max-width: 90vw;
 }
 
 }
+
+@media (max-width: 640px) {
+  .chat-intro img {
+    max-width: 80px;
+    width: 70%;
+    margin-bottom: 1.2rem;
+  }
+}
+
 
